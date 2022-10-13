@@ -23,7 +23,7 @@ public class iniciarsesion : MonoBehaviour
         if(www.text[0] == '0')
         {
             DBManager.usuario = nameField.text;
-            DBManager.score = int.Parse(www.text.Split('\t')[1]);
+            DBManager.resultado = int.Parse(www.text.Split('\t')[1]);
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
         else
